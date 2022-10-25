@@ -2,18 +2,18 @@ import Component from "@glimmer/component";
 import { inject as service } from "@ember/service";
 import { tracked } from "@glimmer/tracking";
 
-export default class customHeaderBanner extends Component {
+export default class CustomHeaderBanner extends Component {
   @service router;
   @tracked randomBool;
-
-  getRandomBool() {
-    this.randomBool = Math.round(1 * Math.random());
-  }
 
   constructor() {
     super(...arguments);
     this.getRandomBool();
     this.router.on("routeDidChange", this, this.getRandomBool);
+  }
+
+  getRandomBool() {
+    this.randomBool = Math.round(1 * Math.random());
   }
 
   get imgUrl() {
