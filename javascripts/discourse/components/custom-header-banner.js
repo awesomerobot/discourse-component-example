@@ -18,17 +18,17 @@ export default class CustomHeaderBanner extends Component {
 
   get imgUrl() {
     if (this.randomBool === 1) {
-      return "https://placekitten.com/200/300";
+      return settings.image_1;
     } else {
-      return "https://placekitten.com/400/400";
+      return settings.image_2;
     }
   }
 
   get linkUrl() {
     if (this.randomBool === 1) {
-      return "https://google.com";
+      return settings.url_1;
     } else {
-      return "https://bing.com";
+      return settings.url_2;
     }
   }
 }

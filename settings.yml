@@ -1,0 +1,13 @@
+image_1:
+  default: ""
+  type: upload
+
+url_1:
+  default: ""
+
+image_2:
+  default: ""
+  type: upload
+
+url_2:
+  default: ""
